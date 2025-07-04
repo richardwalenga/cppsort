@@ -11,7 +11,7 @@ cmake --version
 
 For a tool like VSCode, it would be a good idea to specify the path to your C++ compiler in your user's settings.json under the key: "C_Cpp.default.compilerPath".
 
-Create a CMakeUserPresets.json like this to customize the build for your machine. It would look something like this:
+On Windows, create a CMakeUserPresets.json like this to customize the build for your machine. It would look something like this:
 ```
 {
     "version": 8,
@@ -32,7 +32,7 @@ Create a CMakeUserPresets.json like this to customize the build for your machine
 
 For VSCode, one now needs to select the preset mydefault which is in CMakeUserPresets.json [following these instructions](https://code.visualstudio.com/docs/cpp/cmake-linux#_configure-using-cmake-presets).
 
-A normal build involves running:
+A normal build involves running (use default in place of mydefault if not using CMakeUserPresets.json):
 ```
 mkdir build
 mkdir build/mydefault
