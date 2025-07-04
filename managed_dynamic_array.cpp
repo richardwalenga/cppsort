@@ -1,4 +1,5 @@
 #include "managed_dynamic_array.h"
+#include <cstring>
 
 template <typename T>
 ManagedDynamicArray<T>::ManagedDynamicArray(int size)
