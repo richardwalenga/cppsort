@@ -45,7 +45,7 @@ void ManagedDynamicArray<T>::copy_from(const T * src, int num_elements)
 {
     if (num_elements > size_)
     {
-        throw std::runtime_error("Number of elements from source exceeds ManagedDynamicArray size of " + size_);
+        throw std::runtime_error("Number of elements from source exceeds ManagedDynamicArray size of " + std::to_string(size_));
     }
 
     size_t num_bytes = sizeof(T) * num_elements;
